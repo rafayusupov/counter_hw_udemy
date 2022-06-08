@@ -1,4 +1,4 @@
-# cpunter_hw_udemy
+# counter_hw_udemy
 
 A new Flutter project.
 
