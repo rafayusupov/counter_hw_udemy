@@ -8,11 +8,12 @@ class MyCounter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           title: Text('Counter'),
           centerTitle: true,
-          backgroundColor: Colors.orangeAccent,
+          backgroundColor: Colors.deepPurple,
         ),
         body: Container(
           padding: EdgeInsets.all(130),
@@ -20,10 +21,12 @@ class MyCounter extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text('Tap "-" to decrement',
-                  style: TextStyle(color: Colors.white)),
+                  style: TextStyle(color: Colors.white, fontSize: 13)),
+              SizedBox(height: 10,),
               CounterWidget(),
+              SizedBox(height: 10,),
               Text('Tap "+" to decrement',
-                  style: TextStyle(color: Colors.white)),
+                  style: TextStyle(color: Colors.white,fontSize: 12)),
             ],
           ),
         ),
